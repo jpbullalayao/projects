@@ -1,13 +1,13 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   HeapSort
+/* Author: 	   Jourdan Bul-lalayao
+ * Class: 	   HeapSort
  * Purpose: 	   Performs heap sort on a Comparable array between specified indices
- * 				   User also has option to sort the array in reverse order.
+ * 		   User also has option to sort the array in reverse order.
  * Helper methods: maxIndex				  
  */
 
 public class HeapSort {
 	
-	/* Method:		heapSort
+	/* Method:	heapSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void heapSort(Comparable[] array, int lowindex, int highindex,
@@ -40,11 +40,11 @@ public class HeapSort {
 		heapSort(array, lowindex, highindex - 1, reversed);		
 	}
 	
-	/* Method: 		maxIndex
+	/* Method: 	maxIndex
 	 * Arguments:	array, i, sib, reversed
 	 * Purpose:     Finds max or min index for HeapSort, depending on whether or not array 
-	 * 				will be reversed
-	 * Return:		i or sib (int)
+	 * 		will be reversed
+	 * Return:	i or sib (int)
 	 */
 	private int maxIndex(Comparable[] array, int i, int sib, boolean reversed) {
 		
