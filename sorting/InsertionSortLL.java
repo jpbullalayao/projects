@@ -1,16 +1,16 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   InsertionSortLL
+/* Author: 	   Jourdan Bul-lalayao
+ * Class: 	   InsertionSortLL
  * Purpose: 	   Performs insertion sort on a linked list between specified indices.
- * 				   User also has option to sort the list in reverse order.
+ * 		   User also has option to sort the list in reverse order.
  * Helper class:   LLNode
  * Helper methods: myInsertionSortLL
  */
 
 public class InsertionSortLL {
 	
-	/* Method: 		insertionSortLL
+	/* Method: 	insertionSortLL
 	 * Arguments: 	list, reversed
-	 * Return:	  	A (LLNode)
+	 * Return:  	A (LLNode)
 	 */
 	public LLNode insertionSortLL(LLNode list, boolean reversed) {		
 		
@@ -19,9 +19,9 @@ public class InsertionSortLL {
 	}
 	
 	
-	/* Method:		myInsertionSortLL
+	/* Method:	myInsertionSortLL
 	 * Arguments:	list, reversed
-	 * Return:		list (LLNode)
+	 * Return:	list (LLNode)
 	 */
 	private LLNode myInsertionSortLL(LLNode list, boolean reversed) {
 	
