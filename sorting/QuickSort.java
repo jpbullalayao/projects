@@ -1,13 +1,13 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   QuickSort
+/* Author: 	   Jourdan Bul-lalayao
+ * Class: 	   QuickSort
  * Purpose: 	   Performs quick sort on a Comparable array between specified indices.
- * 				   User also has option to sort the array in reverse order.
+ * 		   User also has option to sort the array in reverse order.
  * Helper methods: computePivot, Partition
  */
 
 public class QuickSort {
 	
-	/* Method:		quickSort
+	/* Method:	quickSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void quickSort(Comparable[] array, int lowindex, int highindex,
@@ -50,11 +50,11 @@ public class QuickSort {
 	}
 	
 	
-	/* Method:		computePivot
-	 * Purpose:		Determine pivot element of array based on first, middle and last index
-	 * 				in array.
+	/* Method:	computePivot
+	 * Purpose:	Determine pivot element of array based on first, middle and last index
+	 * 		n array.
 	 * Arguments:	first, middle, last
-	 * Return:		pivot (Comparable)
+	 * Return:	pivot (Comparable)
 	 */
 	private Comparable computePivot(Comparable first, Comparable middle, Comparable last) {
 		
@@ -79,10 +79,10 @@ public class QuickSort {
 	}
 	
 	
-	/* Method:		Partition
-	 * Purpose:		Inserts pivot element in correct position by partioning array.
+	/* Method:	Partition
+	 * Purpose:	Inserts pivot element in correct position by partioning array.
 	 * Arguments:	array, pivot, lowindex, highindex, reversed
-	 * Return:		j (int)
+	 * Return:	j (int)
 	 */
 	private int Partition(Comparable[] array, Comparable pivot, int lowindex, 
 			int highindex, boolean reversed) {
