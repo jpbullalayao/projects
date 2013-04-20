@@ -1,12 +1,12 @@
 /* Author: 	Jourdan Bul-lalayao
  * Class: 	InsertionSort
- * Purpose: Performs insertion sort on a Comparable array between specified indices.
- * 			User also has option to sort the array in reverse order.
+ * Purpose: 	Performs insertion sort on a Comparable array between specified indices.
+ * 		User also has option to sort the array in reverse order.
  */
 
 public class InsertionSort {
 
-	/* Method: 	  insertionSort 
+	/* Method:    insertionSort 
 	 * Arguments: array, lowindex, highindex, reversed 
 	 * */
 	public void insertionSort(Comparable[] array, int lowindex, int highindex,
