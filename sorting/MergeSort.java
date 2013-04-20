@@ -1,13 +1,13 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   MergeSort
+/* Author: 	   Jourdan Bul-lalayao
+ * Class: 	   MergeSort
  * Purpose: 	   Performs merge sort on a Comparable array between specified indices.
- * 				   User also has option to sort the array in reverse order.
+ * 		   User also has option to sort the array in reverse order.
  * Helper methods: Merge
  */
 
 public class MergeSort {
 	
-	/* Method: 		mergeSort
+	/* Method: 	mergeSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void mergeSort(Comparable[] array, int lowindex, int highindex,
@@ -24,8 +24,8 @@ public class MergeSort {
 	}
 	
 	
-	/* Method:		Merge
-	 * Purpose:		Merges each half of array together
+	/* Method:	Merge
+	 * Purpose:	Merges each half of array together
 	 * Arguments:	array, lowindex, midindex, highindex, reversed
 	 */
 	private void Merge(Comparable[] array, int lowindex, int midindex, int highindex,
