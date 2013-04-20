@@ -1,14 +1,14 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   OptimizedQuickSort
+/* Author: 	   Jourdan Bul-lalayao
+ * Class: 	   OptimizedQuickSort
  * Purpose: 	   Performs quick sort on a Comparable array between specified indices.
- * 				   Once array is small enough, performs insertion sort for better performance.
- * 				   User also has option to sort the array in reverse order.
+ * 		   Once array is small enough, performs insertion sort for better performance.
+ * 		   User also has option to sort the array in reverse order.
  * Helper methods: computePivot, Partition
  */
 
 public class OptimizedQuickSort {
 	
-	/* Method:		optimizedQuickSort
+	/* Method:	optimizedQuickSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void optimizedQuickSort(Comparable[] array, int lowindex,
@@ -32,11 +32,11 @@ public class OptimizedQuickSort {
 		}
 	}
 	
-	/* Method:		computePivot
-	 * Purpose:		Determine pivot element of array based on first, middle and last index
-	 * 				in array.
+	/* Method:	computePivot
+	 * Purpose:	Determine pivot element of array based on first, middle and last index
+	 * 		in array.
 	 * Arguments:	first, middle, last
-	 * Return:		pivot (Comparable)
+	 * Return:	pivot (Comparable)
 	 */
 	private Comparable computePivot(Comparable first, Comparable middle, Comparable last) {
 		
@@ -61,10 +61,10 @@ public class OptimizedQuickSort {
 	}
 	
 	
-	/* Method:		Partition
-	 * Purpose:		Inserts pivot element in correct position by partioning array.
+	/* Method:	Partition
+	 * Purpose:	Inserts pivot element in correct position by partioning array.
 	 * Arguments:	array, pivot, lowindex, highindex, reversed
-	 * Return:		j (int)
+	 * Return:	j (int)
 	 */
 	private int Partition(Comparable[] array, Comparable pivot, int lowindex, 
 			int highindex, boolean reversed) {
