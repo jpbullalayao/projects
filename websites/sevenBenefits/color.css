@@ -1,0 +1,20 @@
+/* Author:      Jourdan Bul-lalayao
+ * Stylesheet:  color.css
+ * Purpose:     Stylesheet for "7 Benefits to Video Games" page.
+ */
+
+h1 { background-color: #cccccc;
+	 color: #000000; }
+
+body { background-color: #CCCCFF;
+	   color: #000000; } 
+
+p {
+	}
+	   
+i { font-family: 'Vollkorn', serif;
+	color: #000000; }
+	
+#links { background-color: #cccccc;
+		color: #000000; }
+		

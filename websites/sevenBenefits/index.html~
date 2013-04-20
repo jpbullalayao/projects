@@ -1,0 +1,93 @@
+<!-- Author: Jourdan Bul-lalayao
+  -- Page:   index
+  -->
+
+
+<!DOCTYPE html>
+<html lang"en">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="frontpage.css">
+<title>7 Things You Should Know About...</title>
+</head>
+
+<body>
+<article>
+
+    <div id="wrapper">
+    <div id="cover">
+	<h1><div align="center">Video Gaming: Seven Benefits</align></h1>
+	</div> <!-- Cover -->
+	<div align="center">
+    <div id="links">
+	<a href="fact1.html">Benefit #1</a> &nbsp;&nbsp;
+	<a href="about_me.html">About</a> &nbsp;&nbsp;
+	</div> <!-- Links -->
+    </div> <!-- Center -->
+	<br>
+    
+
+    <div id="welcome">
+    <b><center>Welcome!</center></b>
+    Video games have always had a bad reputation among parents and teachers. However, do they deserve the bad reputation that they have been receiving? Many may argue that these video games do indeed deserve this bad reputation, specifically because video games may be one cause as to why students can be distracted from school, and even from real-life responsibilities. However, there is another side to video games. If video games were given a chance and were invested in by parents and teachers, video games can actually have major benefits on the lives of not only students, but even these parents and teachers. In the following pages, I will be describing the benefits that video games can provide to everyone who is invested into it. Brief overviews for seven benefits are given below. Click on the links above if you want more information on each benefit. <i>All information provided is courtesy of abcnews.go.com.</i>
+    </div>
+    
+    <div id="content">
+	<dl><b><center>What are seven benefits to video gaming?</center></b></dl>
+		<dt><b>1) Educational Benefits</b></dt>
+			<dd>
+			<br>
+			Believe it or not, one thing that video gaming can provide are educational benefits for kids, and even adults! These benefits can include teaching the gamer basic everyday skills, as well as teaching the gamer basic educational skills that can be taught in the classroom.
+			<br><br>
+			</dd>
+			
+		<dt><b>2) Improved Multitasking</b></dt>
+			<dd>
+			<br>
+			One thing that video games are known for is making you work hard at what you're trying to accomplish. And in this concept, you're also helping yourself improve in a useful real-life skill: multi-tasking.
+			<br><br>
+			</dd>
+			
+		<dt><b>3) Social Benefits</b></dt>
+			<dd>
+			<br>
+			Video games can even provide social benefits for the gamer. These may not be apparent right away, but if you think about it, video games, especially ones that require team play, can help bridge the gap between each gamer.
+			<br><br>
+			</dd>
+			
+		<dt><b>4) Career Benefits</b></dt>
+			<dd>
+			<br>
+			This benefit may also be of some shock, just like the benefits on education that gaming can provide. More information will be provided in this section.
+			<br><br>
+			</dd>
+			
+		<dt><b>5) Encouraging Cooperation and Teamwork</b></dt>
+			<dd>
+			<br>
+			What is teamwork when you don't have a team to play with? Well, many games were made for multiplaying, and these games can help gamers improve in cooperation and teamwork.
+			<br><br>
+			</dd>
+			
+		<dt><b>6) Promoting Exercise</b></dt>
+			<dd>
+			<br>
+			Yes, games provide a way for promoting exercising. Not all games require you to sit on your chair and mash buttons all day! Have you heard of the Xbox Kinect, Wii or Playstation Move?
+			<br><br>
+			</dd>
+			
+		<dt><b>7) Building Confidence</b></dt>
+			<dd>
+			<br>
+			All games were meant for you to beat. Well, at least I'm pretty sure all games were meant to be this way. And what better way to help build your confidence by helping you accomplish small goals in the game you're playing?
+			<br><br>
+			</dd>
+        
+        </div> <!-- Content -->
+        <div id="footer">Copyright © 2012</div>
+        </div> <!-- Wrapper -->
+</article>
+</body>
+</html>
+
