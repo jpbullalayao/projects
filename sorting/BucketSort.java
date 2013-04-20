@@ -1,13 +1,13 @@
-/* Author: 		   	Jourdan Bul-lalayao
- * Class: 		   	BucketSort
+/* Author: 		Jourdan Bul-lalayao
+ * Class: 		BucketSort
  * Purpose: 	   	Performs bucket sort on an int array between specified indices
- * 				   	User also has option to sort the array in reverse order.
+ * 			User also has option to sort the array in reverse order.
  * Helper class:	LLNode
  */
 
 public class BucketSort {
 	
-	/* Method: 		bucketSort
+	/* Method: 	bucketSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void bucketSort(int[] array, int lowindex, int highindex,
