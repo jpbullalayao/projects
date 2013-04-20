@@ -1,13 +1,13 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   ShellSort
+/* Author:         Jourdan Bul-lalayao
+ * Class:          ShellSort
  * Purpose: 	   Performs shell sort on a Comparable array between specified indices
- * 				   using Hibbard's increments. User also has option to sort the array 
- * 				   in reverse order.
+ * 		   using Hibbard's increments. User also has option to sort the array 
+ * 		   in reverse order.
  */
 
 public class ShellSort {
 
-	/* Method: 		shellSort
+	/* Method: 	shellSort
 	 * Arguments:	array, lowindex, highindex, reversed
 	 */
 	public void shellSort(Comparable[] array, int lowindex, int highindex,
