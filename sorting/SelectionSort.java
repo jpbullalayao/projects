@@ -1,12 +1,12 @@
-/* Author: 		   Jourdan Bul-lalayao
- * Class: 		   OptimizedQuickSort
+/* Author:         Jourdan Bul-lalayao
+ * Class: 	   OptimizedQuickSort
  * Purpose: 	   Performs selection sort on a Comparable array between specified indices.
- * 				   User also has option to sort the array in reverse order.
+ * 		   User also has option to sort the array in reverse order.
  */
 
 public class SelectionSort {
 	
-	/* Method:		selectionSort
+	/* Method:	selectionSort
 	 * Arguments: 	array, lowindex, highindex, reversed
 	 */
 	public void selectionSort(Comparable[] array, int lowindex, int highindex,
