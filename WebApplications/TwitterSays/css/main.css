@@ -1,0 +1,190 @@
+.settingsWrapper {
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	/*padding:10px;*/
+}
+
+.widgetWrapper {
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.twitterContainer {
+	border:1px solid black;
+    /*-moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    border-radius: 15px;*/
+}
+
+.title {
+	margin:0 0 10px 0;
+	text-align:center;
+	text-transform:uppercase;
+	font-size:20px;
+	padding:10px;
+	color:#FFFFFF;
+	background-color:#272727;
+	letter-spacing:1.5px;
+}
+
+.feed {
+	padding:10px;
+}
+
+/* Entire tweet container */
+.tweet {
+	padding:5px;
+}
+
+/* Displaying tweets */
+.tweetText {
+	font-size:12px;
+}
+
+.tweetOptions {
+	display:inline-block;
+	/*margin-left:auto;
+	margin-right:auto;*/
+}
+
+/* Displaying profile pic */
+.profPic {
+	float:left;
+}
+
+.bio {
+	padding-left:10px;
+}
+
+.bioName {
+	font-family:Helvetica Neue;
+}
+
+/* Area on front-end where website user can tweet */
+.tweetInput {
+	padding:10px;
+	border-width:1px 0 0 0;
+	border-style:solid;
+	border-color:black;
+}
+
+/* ALLOW USER TO CHANGE COLOR OF BORDER */
+.tweetBox {
+	border:1px solid #33CCFF;
+	border-radius:3px;
+	background-color:#FFFFFF;
+}
+
+.tweetBox:hover {
+	border:1px solid #000000;
+}
+
+.tweetSmall {
+	font-size:11px;
+}
+
+/* Disable twitter input field to turn it into a button */
+input:disabled {
+	border:0;
+	background-color:#FFFFFF;
+}
+
+/* Input text field for tweeting */
+.input {
+	width:100%;
+	color:#000000;
+	padding:5px;
+	text-align:center;
+	/*font-family:Helvetica Neue;*/
+	/*border-radius:10px;
+	*/
+	/* ADD COMPATIABLE BORDER RADIUS LINES HERE */
+}
+
+/* For subsection of accordion pane */
+.subsection {
+	padding-left:27px; /* ??? */
+	color:#373737;
+	font-size:13px;
+	width:200px;
+}
+
+.subsectionLeftMargin {
+	margin-left:27px;
+}
+
+.subsectionRightMargin {
+	margin-right:27px;
+}
+
+/* For subsection of accordion pane */
+.subsectionWidth {
+	width:300px;
+	/*border:1px solid red;*/
+}
+
+.subsectionMedWidth {
+	width:200px;
+}
+
+.subsectionSmallWidth {
+	width:100px;
+}
+
+/* Float left */
+.left {
+	float:left;
+}
+
+/* Float right */
+.right {
+	float:right;
+}
+
+/* FOR DEBUGGING FILTERS */
+.filter_subsection {
+	font-size:13px;
+	text-align:right;
+	padding-right:27px;
+	width:300px;
+}
+
+/* WILL HAVE TO CHANGE WIDTH ACCORDING TO SIZE OF FILTERS */
+.filters {
+	width:245px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:10px;
+}
+
+.filter_text {
+	font-size:13px;
+	/*font-family: Helvetica Neue;*/
+	display:inline-block;
+	/*width:35%;*/
+	padding:5px;
+}
+
+
+.filter_dropdown {
+	width:60%;
+	/*border:1px solid red;*/
+}
+
+/* Debugging purposes */
+.border {
+	border: 1px solid red;
+}
+
+/* Make input fields in settings position correctly with buttons */
+.marg_top {
+	margin-top:3px;
+}
+
+/* Clear floats */
+.clear {
+	clear:both;
+}

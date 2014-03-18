@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/ui-lib.min.css"></link>
+        <link rel="stylesheet" href="./css/main.css"></link>
+    </head>
+    <body wix-ui class="wrapper"> <!-- KEEP WRAPPER WHEN DEVELOPING, TAKE OFF WHEN DONE -->
+    	<div wix-scroll="{height:646}">
+	        <header class="box">
+
+	            <div class="logo">
+	                <img width="86" src="images/wix_icon.png" alt="logo"/>
+	            </div>
+	            <div class="loggedOut">
+	            	<!-- App Description -->
+	                <p>Allow for customers to interact with other customers, and display certain tweets based on Hashtags, as well as your business tweets! Separate tweets by filters, and design the interface to your own liking.</p>
+	                <div class="login-panel"><!-- App login panel --></div>
+	            </div>
+	            <div class="loggedIn hidden">
+	                <!-- App Logged in information -->
+	                <div class="premium-panel"><!-- Premium features --></div>
+	            </div>
+	        </header>
+
+	        <!-- Settings -->
+	        <div>
+	        	<!-- Buttons used for tabs, maybe use accordion instead -->
+				<!--<div wix-model="multiSize" wix-ctrl="ButtonGroup">
+				    <button value="settings">Settings</button>
+				    <button value="appearance">Appearance</button>
+				    <button value="filters">Filters</button>
+				    <button value="tweets">Tweets</button>
+				</div>-->
+
+				<!-- Accordion for different sections of settings -->
+				<div wix-ctrl="Accordion">
+				    <div class="acc-pane">
+				        <h3>Settings</h3>
+				        <div class="acc-content">Accordion Content
+				        </div>
+				    </div>
+				    <div class="acc-pane">
+				        <h3>Appearance</h3>
+				        <div class="acc-content">
+				        	<!-- Display tweets -->
+				        	
+				        </div>
+				    </div>
+				    <div class="acc-pane">
+				        <h3>Filters</h3>
+				        <div class="acc-content">Accordion Content
+				        </div>
+				    </div>
+				    <div class="acc-pane">
+				        <h3>Tweets</h3>
+				        <div class="acc-content">Accordion Content
+				        </div>
+				    </div>
+				</div>
+	        </div>
+
+    	</div>
+
+        <!-- your settings -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="http://sslstatic.wix.com/services/js-sdk/1.26.0/js/Wix.js"></script>
+        <script src="js/ui-lib.min.js"></script>
+
+        <script type="text/javascript">
+
+        	/* Need this in order to display everything */
+		    $(document).ready(function () {
+
+		        Wix.UI.initialize({
+		            numOfImages: 100,
+		            isIconShown: true,
+		            imageVisibility: 'show',
+		            imagesToSync: 0,
+		            imageLink: false
+		        });
+		    });
+		</script>
+
+    </body>
+</html>
