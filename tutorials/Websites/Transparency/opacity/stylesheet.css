@@ -1,0 +1,17 @@
+#wrapper {
+    width:70%;
+    padding:50px;
+    color:#000000; /* black */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    opacity:0.5; /* 50% transparent. "1.0" would make it non-transparent, and "0.0" would make it fully transparent.*/
+    background-color:#C8C8C8;
+    height:550px; /* DEMONSTRATION PURPOSES. You typically don't want to pre-set the height of any element that would
+                     contain content. */
+    font-size:25px; /* DEMONSTRATION PURPOSES */
+}
+ 
+body {
+    background-image: url("background_image.jpg"); /* Uploads image into body element */
+}

@@ -1,0 +1,19 @@
+#wrapper {
+    width:70%;
+    padding:50px;
+    color:#000000; /* black */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    background:rgb(255, 255, 255); /* FALL BACK COLOR if user's browser isn't compatible with rgba */
+    background:rgba(255, 255, 255, 0.5); /* rgba is what makes the wrapper transparent with a white color, without affecting the text transparency.
+                                            The value "0.5" makes the element transparent, whereas "1" would make the element non-transparent, and "0"
+                                            would make the element completely transparent. rgba IS NOT COMPATIBLE with all browsers. */
+    height:550px; /* DEMONSTRATION PURPOSES. You typically don't want to pre-set the height of any element that would
+                     contain content. */
+    font-size:25px; /* DEMONSTRATION PURPOSES */
+}
+ 
+body {
+    background-image: url("background_image.jpg"); /* Uploads image into body element */
+}

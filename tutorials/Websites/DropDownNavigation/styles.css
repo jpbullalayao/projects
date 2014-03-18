@@ -1,0 +1,50 @@
+ul {
+    list-style:none;
+    margin:0; /* Demonstration purposes to keep navigation menu in top left corner. */
+    padding:0;
+}
+ 
+ul li {
+    float:left; /* Puts tabs on same line */
+}
+ 
+ul li a {
+    display:block; /* Displays links on separate lines. */
+    color:#000000;
+    padding:5px 15px 5px 15px; /* 5px top, 15px right, 5px bottom, 15px left */
+    margin-top:1px; /* Separates dropdown links by whitespace */
+    margin-left:1px; /* Separates tabs by whitespace */
+    background-color:#CCCCCC;
+    white-space:nowrap; /* Doesn't wrap words across separate lines if line is too long for parent's li width. This is for the dropdown menu. */
+}
+ 
+li:hover ul { /* Displays dropdown menu for specific li element, once mouse hovers over li element */
+    position:absolute; /* Positions directly under the correct tab */
+    display:block;
+}
+ 
+li:hover li { /* Keeps li elements same width in dropdown menu, since it's originally floating left, as specified in "ul li" selector */
+    float:none;
+}
+ 
+li:hover a {
+    background-color:#252525; /* Changes background color of tab and dropdown links to shade of black when tab is hovered over */
+    color:#FFFFFF; /* Changes text color of tab and dropdown links to white when tab is hovered over. */
+}
+ 
+a {
+    text-decoration:none; /* So that links aren't underlined */
+}
+ 
+.dropdown {
+    display:none; /* Anything in dropdown class doesn't appear initially when page loads */
+}
+ 
+.dropdown li:hover a {
+    text-decoration:underline; /* Underlines link if li element in dropdown menu is hovered over */
+}
+ 
+.dropdown li a:hover {
+    background-color:#CCCCCC; /* Changes background color of link in dropdown menu to grey when we hover over link */
+    color:#000000; /* Changes text color of link in dropdown menu to black when we hover over link */
+}

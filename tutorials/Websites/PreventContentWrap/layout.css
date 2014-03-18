@@ -1,0 +1,14 @@
+#wrapper {
+    width:80%;
+    margin-left:auto; /* "auto" to help center the wrapper along with margin-right */
+    margin-right:auto; /* "auto" to help center the wrapper along with margin-left */
+    background-color:#CCCCCC; /* Hexadecimal representation for a light gray color. */
+}
+ 
+#content, header, footer { /* Notice that we can use several selectors for other elements if they each contain the same styles, instead of
+                                writing each selector seperately */
+    border-style:solid; /* Displays border for wrapper element with help of the 2 following lines of code*/
+    border-color:black;
+    border-width:medium;
+    margin-bottom:10px; /* Ensures that other elements under these selectors are placed 10 pixels below. */
+}

@@ -1,0 +1,42 @@
+body { /* Will style the "body" tag in html file */
+    background-color:yellow;
+}
+ 
+#wrapper { /* "id" selector for the wrapper tag. The styles in this tag will refer to whatever tag in the html code has the id of "wrapper." */
+    width:80%;
+    border-style:solid; /* Displays border for wrapper tag with help of the 2 following lines of code*/
+    border-color:black;
+    border-width:medium;
+    background-color:purple;
+    margin-left:auto; /* "auto" to help center the wrapper along with margin-right */
+    margin-right:auto; /* "auto" to help center the wrapper along with margin-left */
+}
+ 
+header { /* Will style the "header" tag in html file */
+    width:100%; /* Takes 100% width of wrapper's width (the parent) */
+    background-color:red;
+}
+ 
+nav { /* Will style the "nav" tag in html file */
+    width:30%; /* Takes 30% width of wrapper's width (the parent) */
+    background-color:white;
+    float:left; /* Positions navigation to left and allows for other tags to positioned next to it rather than below it*/
+    height:400px; /* Fixed height at 400px for demonstration. You normally wouldn't
+                    want to pre-set the height dimension of any tag. */
+}
+ 
+#content { /* "id" selector for the content tag. The styles in this tag will refer to whatever tag in the html code has the id of "content." */
+    width:70%; /* Takes up 70% width of wrapper's width (the parent). Notice how with the navigation's width, 30% + 70% = 100%. If we used width > 70%, the content section wouldn't fit */
+    background-color:blue;
+    float:right; /* Positions content right next to the navigation section instead of under it.
+                    Floating to the right works just the same way, in this case */
+    height:400px; /* Fixed height at 400px for demonstration. You normally wouldn't
+                    want to pre-set the height dimension of any tag. */
+}
+ 
+footer { /* Will style the "footer" tag in html file */
+    clear:both; /* Makes absolute sure to position footer under BOTH the content and navigation bars.
+                This is known as "clearing a float", and only works when an tag(s) above is using the "float" property. */
+    width:100%; /* Takes up 100% width of wrapper (the parent) */
+    background-color:gray;
+}
