@@ -1,0 +1,74 @@
+StartMenu
+{
+	zorder 200
+
+	container Panel(StartMenu/Panel1)
+	{
+		metrics_mode relative
+		
+		top 0.1
+		left 0.37
+		width 0.45
+		height 0.2
+
+		element TextArea(StartMenu/Panel1/Text1)
+      		{
+        		metrics_mode relative
+      
+        		font_name BlueHighwayBig
+        		char_height 0.1
+        		colour 1 1 1
+        		caption Difficulty?
+      		}
+	}
+}
+
+Easy
+{
+	zorder 200
+
+	container Panel(StartMenu/Panel2)
+	{
+		metrics_mode relative
+		
+		top 0.4
+		left 0.1
+		width 0.45
+		height 0.2
+
+		element TextArea(StartMenu/Panel2/Text2)
+      		{
+        		metrics_mode relative
+      
+        		font_name BlueHighwayBig
+        		char_height 0.1
+        		colour 1 1 1
+        		caption Easy (E)
+      		}
+	}
+}
+
+Hard
+{
+	zorder 200
+
+	container Panel(StartMenu/Panel3)
+	{
+		metrics_mode relative
+		
+		top 0.4
+		left 0.65
+		width 0.45
+		height 0.2
+
+		element TextArea(StartMenu/Panel3/Text3)
+      		{
+        		metrics_mode relative
+      
+        		font_name BlueHighwayBig
+        		char_height 0.1
+        		colour 1 1 1
+        		caption Hard (H)
+      		}
+	}
+}
