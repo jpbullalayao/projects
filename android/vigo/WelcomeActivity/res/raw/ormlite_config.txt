@@ -1,0 +1,192 @@
+#
+# generated on 2013/10/31 04:47:19
+#
+# --table-start--
+dataClass=com.vigo.vigoapp.model.Device
+tableName=devices
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=address
+# --field-end--
+# --field-start--
+fieldName=userId
+indexName=devices_userId_idx
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.Event
+tableName=events
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=start
+# --field-end--
+# --field-start--
+fieldName=end
+# --field-end--
+# --field-start--
+fieldName=eventTypeId
+# --field-end--
+# --field-start--
+fieldName=userID
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.EventType
+tableName=event_types
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=type
+# --field-end--
+# --field-start--
+fieldName=userId
+indexName=event_types_userId_idx
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.LogData
+tableName=log_data
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=sessionId
+indexName=log_data_sessionId_idx
+# --field-end--
+# --field-start--
+fieldName=timestamp
+# --field-end--
+# --field-start--
+fieldName=state
+# --field-end--
+# --field-start--
+fieldName=prox1
+# --field-end--
+# --field-start--
+fieldName=prox2
+# --field-end--
+# --field-start--
+fieldName=prox3
+# --field-end--
+# --field-start--
+fieldName=ambient
+# --field-end--
+# --field-start--
+fieldName=yaw
+# --field-end--
+# --field-start--
+fieldName=pitch
+# --field-end--
+# --field-start--
+fieldName=roll
+# --field-end--
+# --field-start--
+fieldName=totalBlinks
+# --field-end--
+# --field-start--
+fieldName=avgBpm
+# --field-end--
+# --field-start--
+fieldName=avgBlinkDuration
+# --field-end--
+# --field-start--
+fieldName=recentBlinkDuration
+# --field-end--
+# --field-start--
+fieldName=avg
+# --field-end--
+# --field-start--
+fieldName=perClos
+# --field-end--
+# --field-start--
+fieldName=idleTime
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.LogSession
+tableName=log_session
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=device_id
+# --field-end--
+# --field-start--
+fieldName=timestamp
+# --field-end--
+# --field-start--
+fieldName=userId
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.State
+tableName=states
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=timestamp
+# --field-end--
+# --field-start--
+fieldName=eventId
+indexName=states_eventId_idx
+# --field-end--
+# --field-start--
+fieldName=val
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.vigo.vigoapp.model.User
+tableName=users
+# --table-fields-start--
+# --field-start--
+fieldName=id
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=email
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=firstname
+# --field-end--
+# --field-start--
+fieldName=lastname
+# --field-end--
+# --field-start--
+fieldName=displayPictureLink
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################

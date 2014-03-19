@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vigo.vigoapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="18"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+ 
+    <!--  Jourdan -->
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.vigo.vigoapp.WelcomeActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.bluetooth.DeviceScanActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service
+            android:name="com.vigo.vigoapp.bluetooth.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity android:name="com.vigo.vigoapp.DemoActivity" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.SignUpActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.SearchActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.CalibrationActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.VigoMainActivity"
+            android:label="@string/title_activity_vigo_main" >
+        </activity>
+        <activity
+            android:name="com.vigo.vigoapp.RequestDataActivity"
+            android:label="@string/title_activity_request_data" >
+        </activity>
+    </application>
+
+</manifest>

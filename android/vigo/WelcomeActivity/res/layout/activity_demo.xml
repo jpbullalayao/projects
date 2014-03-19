@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stastaticsAndDetailsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/blink_graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calib_circle"
+        android:layout_marginBottom="@dimen/marg_md"
+        android:layout_marginTop="@dimen/marg_md" >
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/accelerometer_graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calib_circle"
+        android:layout_marginBottom="@dimen/marg_md"
+        android:layout_marginTop="@dimen/marg_md" >
+
+    </RelativeLayout>
+
+      <Button
+            android:id="@+id/request_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request Data" />
+      
+      <Button
+            android:id="@+id/stop_data_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Data" />
+      
+      <TextView
+          android:id="@+id/status_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello" />
+
+</LinearLayout>
