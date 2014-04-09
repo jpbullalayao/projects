@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/marg_md"
+    android:paddingRight="@dimen/marg_md"
+    android:paddingTop="@dimen/marg_md"
+    android:paddingBottom="@dimen/marg_md" >
+
+    <EditText
+        android:id="@+id/new_event_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="@dimen/marg_sm"
+        android:hint="Event name" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/new_event_dialog_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

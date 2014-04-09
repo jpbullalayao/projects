@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/marg_md"
+    android:paddingLeft="@dimen/marg_md"
+    android:paddingRight="@dimen/marg_md"
+    android:paddingTop="@dimen/marg_lg" >
+
+    <TextView
+        android:id="@+id/signup_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/marg_lg"
+        android:gravity="center"
+        android:text="Sign Up for Vigo Live"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/signup_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_title_text"
+        android:ems="10"
+        android:hint="Full name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/signup_email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_name_field"
+        android:ems="10"
+        android:hint="email address"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signup_password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_email_field"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword" />
+
+    <Spinner
+        android:id="@+id/signup_gender_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_password_field" />
+
+    <Button
+        android:id="@+id/signup_submit_button"
+        style="@style/SleekButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signup_gender_spinner"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up" />
+
+</RelativeLayout>

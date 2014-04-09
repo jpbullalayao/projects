@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="calib_circle">250dp</dimen>
+    <dimen name="calib_padding">37dp</dimen>
+    <dimen name="marg_md">20dp</dimen>
+    <dimen name="marg_lg">50dp</dimen>
+    <dimen name="marg_sm">10dp</dimen>
+    <dimen name="marg_xs">5dp</dimen>
+
+</resources>

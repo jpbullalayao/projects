@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calibration_title"
+        android:textSize="16pt" >
+    </TextView>
+
+    <RelativeLayout
+        android:id="@+id/calibration_layout"
+        android:layout_width="@dimen/calib_circle"
+        android:layout_height="@dimen/calib_circle"
+        android:layout_marginBottom="@dimen/marg_md"
+        android:layout_marginTop="@dimen/marg_md"
+        android:padding="@dimen/calib_padding"
+        android:background="@drawable/circle" >
+    </RelativeLayout>
+
+    <Button
+        style="@style/SleekButton"
+        android:id="@+id/calib_next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calibration_proceed" >
+    </Button>
+
+</LinearLayout>
