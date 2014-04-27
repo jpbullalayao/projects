@@ -1,0 +1,495 @@
+article {
+	padding:10px;
+
+	font-family:Cambria;
+	color:white;
+	/*color:black;*/
+	/*color:#33CCFF; /* sky blue */
+}
+
+
+header {
+	width:auto;
+	border-color:black;
+	border-style:solid;
+	border-width:thick 0 thick 0;
+	text-align:right;
+	padding:10px;
+	/*margin-top:10px;*/
+	margin-bottom:10px;
+	clear:left; /* Puts logo under search and accounts */
+	font-family:Georgia;
+}
+
+b {
+	font-family: Georgia;
+	/*font-family:Lucida Console;
+	/*color:white;*/
+	/*color:#FF3333;*/ /*somewhat brighter orange*/
+	color:#33CCFF; /* sky blue */
+	/*color:#FF3300; /*brighter orange*/
+	/*color:#FF9900 /*orange*/
+	/*color:#1B1BB3;*/ /*blue*/
+}
+
+h2 {
+	color:#33CCFF;
+}
+
+body {
+	/*background-color:#202020;*/
+	/*background-color:#666666;*/
+	/*background-color:#555555;*/
+	/*background-color:#CCCCCC; /* grey */
+	background-color:black;
+	/*background-color:#333333; /* light black */
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#CCCCCC) to(#999999));
+	background-image: -moz-linear-gradient(top, #CCCCCC, #999999);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FFCCCCCC, endColorstr=#FF999999);
+	background-image: linear-gradient(#FFFFFF, #999999);*/
+}
+
+footer {
+	/*width:100%;*/
+	border-width: thick 0 0 0;
+	border-style: solid;
+	border-color: black;
+	padding:10px;
+/*	border-color:black;
+	border-style:solid;
+	border-width:medium;
+	padding:10px;
+	margin-top:10px;
+	font-family:Cambria;
+	/*min-width:98%;*/
+	/*background-image: -webkit-gradient(linear, left top, left bottom, from(#6699CC) to(#006699));
+	background-image: -moz-linear-gradient(top, #6699CC, #006699);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FF6699CC, endColorstr=#FF006699);
+	background-image: linear-gradient(#6699CC, #006699);
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border-radius:15px;
+	margin-left:-10px;
+/*	background-image: -webkit-gradient(linear, left top, left bottom, from(#006699) to(#6699CC));
+	background-image: -moz-linear-gradient(top, #006699, #6699CC);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FF006699, endColorstr=#FF6699CC);
+	background-image: linear-gradient(#006699, #6699CC);
+	/*text-align:center;*/
+	/*font-family:Lucida Console;*/
+	clear:both; /* Puts under latest revisions and forum posts */
+}
+
+footer li {
+	list-style:none;
+	/*color:black;*/
+	color:#FF6600;
+	/*color:#FF3300; /*bright orange*/
+	/*color:#1B1BB3;*/ /*blue*/
+	font-size:90%;
+}
+
+footer li a {
+	text-decoration:none;
+	/*color:black;*/
+	color:white;	
+	font-size:90%;
+}
+
+footer li a:hover {
+	text-decoration:underline;
+}
+
+label {
+	display:inline-block;
+	text-align:right;
+	margin-right:10px;
+	color:#FFFFFF;
+	padding:4px;
+
+}
+
+fieldset {
+	color:#FFFFFF;
+	border-color:#FFFFFF;
+	border-style:ridge;
+	border-width:thin
+}
+
+legend {
+	text-align:center;
+	font-family:Cambria;
+}
+
+.upload {
+	/*display:block;*/
+	padding:10px;
+	font-family:Cambria;
+	color:white;
+	/*text-align:right;*/
+}
+
+.content {
+	width:50%;
+	border-color:black;
+	border-style:solid;
+	border-width:thin 0 0 0;
+	border-radius:15px;
+	-moz-border-radius:15px;
+	padding:10px;
+	margin-bottom:10px;
+	float:left;
+	font-family:Cambria;
+}
+
+.content li {
+	list-style-type:none;
+}
+
+.content li a {
+	text-decoration:none;
+	color:black;
+}
+
+.content li a:hover {
+	text-decoration:underline;
+}
+
+
+.text {
+	color:white;
+	font-family:Cambria;
+}
+
+.title {
+	display:block;
+	text-align:center;
+}
+
+
+.error {
+	color:red;
+}
+
+
+#wrapper {
+	/*width:70%;*/
+	min-width:900px;
+	max-width:900px; 
+	/*min-width:760px;*/
+	margin-left:auto;
+	margin-right:auto;
+	/*background-color:#303030;*/
+	/*background-color:#999999;*/
+	/*background-color: white;*/
+	/*background-color:#CCCCCC; /*grey*/
+	/*background-color:black;*/
+	/*background-color:#333333; /* dark grey */ /* SAVE!!!!!!*/
+	background-color:#181818; /* dark dark grey */
+	/*background-color:#666666; /* light dark grey */
+}
+
+#accounts {
+	float:right;
+	width:auto;
+	font-size:90%;
+	/*margin-bottom:5px;*/
+	padding:5px;
+}
+
+#accounts a {
+	text-decoration:none;
+}
+
+#accounts a:hover {
+	text-decoration:underline;
+}
+
+#register {
+	float:left;
+	padding:5px;
+}
+
+#forgot {
+	float:right;
+	padding:5px;
+}
+
+#register a:hover, #forgot a:hover{
+	color:#33CCFF;
+	text-decoration:underline;
+}
+
+#search {
+	float:left;
+	width:auto;
+	color:#CCCCCC;
+	padding:5px;
+}
+
+#login {
+	width:30%;
+	margin-bottom:20px;
+}
+
+/* Error */
+#nav {
+	/*width:100%;*/
+	padding:7px;
+	margin-top:10px;
+	margin-bottom:10px;
+	/*text-align:center;
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666666) to (#FFFFFF));
+	background-image: -moz-linear-gradient(top, #666666, #FFFFFF);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FF666666, endColorstr=#FFFFFFF);
+	background-image: linear-gradient(#666666, #FFFFFF);
+}
+
+
+#nav li {
+	list-style:none;
+	display:inline-block;
+	margin:-2px;
+	position:relative;
+}	
+
+
+#nav li > a {
+	text-decoration:none;
+	padding:7px;
+	color:black;
+}
+
+#nav > li:hover > a {
+	padding:7px;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#666666) to (#000000));
+	background-image: -moz-linear-gradient(top, #666666, #000000);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FF666666, endColorstr=#000000);
+	background-image: linear-gradient(#666666, #000000);
+	color:#FFFFFF;
+}
+
+#nav table {
+	/*background-color:#000000;*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF) to (#666666));
+	background-image: -moz-linear-gradient(top, #FFFFFF, #666666);
+	filter: progid:DXImageTransform.Microsoft.gradient (startColorstr=#FFFFFFFF, endColorstr=#FF666666);
+	background-image: linear-gradient(#FFFFFF, #666666);
+	padding:5px;
+}
+
+#nav li:hover .dropdown {
+	display:block;
+	position:absolute;
+	margin-top:7px;
+}
+
+.dropdown tr:hover {
+	text-decoration:underline;
+}
+
+
+.dropdown tr td {
+	/*font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;*/
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.dropdown tr td a {
+	text-decoration:none;
+	color:#000000;
+	padding:10px;
+}
+
+
+.dropdown {
+	display:none;
+}
+
+
+
+#announcements, #updates {
+	width:60%;
+	/*border-color:black;*/
+	/*border-color:#FF3300; /* orange */ /* SAVE!!!!! */
+	/*border-color:#1B1BB3;*/
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	font-family:Cambria;
+	float:left;
+	overflow:hidden;
+	clear:left;
+}
+
+#homelatestreviews {
+	width:28%;
+	/*border-color:black;*/
+	/*border-color:#FF3300;*/
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	font-family:Cambria;
+	float:left;
+	overflow:hidden;
+}
+
+#homelatestguides {
+	width:28%;
+	/*border-color:black;*/
+	/*border-color:#FF3300;*/
+	/*border-color:#E65C00;*/
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	margin-left:15px;
+	font-family:Cambria;
+	float:left;
+	overflow:hidden;	
+}
+
+#poll, #posts, #twitter {
+	float:right;
+	clear:right;
+	width:30%;
+	/*border-color:black;*/
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	font-family:Lucida Grande;
+	overflow:hidden
+}
+
+
+
+#sitemap {
+	padding:10px;
+	font-family:Cambria;
+}
+
+#sitemap li {
+	/*display:block;*/
+	list-style:square;
+}
+
+#sitemap li a {
+	color:black;
+	text-decoration:none;
+}
+
+#sitemap li a:hover {
+	text-decoration:underline;
+}
+
+
+#criteria {
+	width:880px;
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	padding:10px;
+	margin-bottom:20px;
+	float:left;
+	font-family:Cambria;	
+}
+
+
+#reviews, #guides {
+	width:50%;
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	float:left;
+	font-family:Cambria;
+}
+
+#latestreviews, #topreviews, #latestguides, #topguides {
+	clear:right; /* Puts hotreviews under latestreviews if latest is too long */
+	float:right;
+	width:40%;
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	font-family:Cambria;
+}
+
+#topreviews ul li, #reviews ul li {
+	list-style-type: none;
+}
+
+#topreviews ul li a, #reviews ul li a {
+	text-decoration:none;
+	color:white;
+}
+
+#submitreview {
+	clear:left;
+	float:left;
+	width:50%;
+	border-color:#FF6600; /* lighter orange */
+	border-style:solid;
+	border-width:thin 0 0 0;
+	/*border-radius:15px;
+	-moz-border-radius:15px;*/
+	padding:10px;
+	margin-bottom:20px;
+	font-family:Cambria;
+}
+
+#submitreview li, #hotreviews li {
+	list-style-type:none;
+	font-family:"Times New Roman", Times, serif;
+}
+
+#hotreviews li a {
+	text-decoration:none;
+	color:black;
+}
+
+#hotreviews li a:hover {
+	text-decoration:underline;
+}
+
+
+#footcontainer {
+	margin: 0;
+}
+
+#footnav, #footacc, #footsup, #footmed, #footabout, #footother {
+	margin-left:6%;
+	float:left;
+	overflow:hidden;
+	clear:right;
+}
+
+
+#copyright {
+	clear:both;
+	font-size:90%;
+	text-align:right;
+}

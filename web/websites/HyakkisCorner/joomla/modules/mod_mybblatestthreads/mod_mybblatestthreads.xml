@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>MyBB Latest Threads</name>
+	<author>Matteo Vignoli</author>
+	<creationDate>November 2010</creationDate>
+	<copyright>Copyright (C) 2010</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@vigmacode.net</authorEmail>
+	<authorUrl>www.vigmacode.net</authorUrl>
+	<version>1.0</version>
+	<description>Shows MyBB latest threads</description>
+	<files>
+		<filename module="mod_mybblatestthreads">mod_mybblatestthreads.php</filename>
+		<filename module="mod_mybblatestthreads">helper.php</filename>
+		<filename module="mod_mybblatestthreads">index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params>
+	
+	  <param name="threadsToShow" type="text" default="10" label="Number of threads to show?" description="Number of threads you want to show" />
+	  
+	    <param name="showType" type="radio" default="lastpost" label="Show latest active threads or latest opened threads?" description="Choose if you want to show the latest active threads (ie., threads containing the latest replies) or the latest threads that have been created, regardless of their being replied to or not">
+			<option value="lastpost">Latest active</option>
+			<option value="dateline">Latest opened</option>
+	  </param>
+	  
+	  <param name="forbiddenThreads" type="text" default="" label="Id(s) of protected forum(s). Separate multiple ids with a comma." description="Write the id(s) of the protected forums (ex. forum only admins can see). If left blank, threads' titles are shown regardless of forum properties!" />
+	  
+	  <param name="moduleStyle" type="text" default="" label="CSS class for module" description="CSS class assigned to the element" />
+	  <param name="imagePath" type="text" default="" label="Image used in thread list. Upload your image in default joomla! directory (images/stories/) and enter here filename only (ex. myImage.jpg)" description="Add an image to the list. Please upload image in default's joomla! directory images/stories/ and enter the file name only, ex. 'myimage.jpg'. If left blank, no image will be used. Accepted extensions are *.jpg,*.png,*.gif,*.bmp" />
+	  
+	  <param name="rowHeight" type="text" default="20" label="Row height" description="Thread row height" />
+	  
+	  <param name="rowWidth" type="text" default="150" label="Row width" description="Thread row width" />
+	  	  
+	  <param name="showLink" type="radio" default="1" label="Add link to forum threads" description="Choose if you want to link to the threads">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+	  </param>
+	  
+	  <param name="forumUrl" type="text" default="" label="MyBB forum URL. Read tooltip description for full instructions" description="Enter the URL of your forum starting with 'http://' and ending with a trailing slash, ex. 'http.//www.mysite.com/forum/'. If no URL is entered, the most common situation, ie. 'http://www.myjoomlasite.com/forum/' will be assumed" />
+	  
+	</params>
+	
+	<params group="advanced">
+	
+	  <param name="mybbTable" type="text" default="mybb_" label="mybb table prefix" description="Prefix for mybb table. Default is mybb_" />
+	
+	</params>
+</install>
