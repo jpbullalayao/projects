@@ -50,8 +50,8 @@
 
 	<!-- Script that uses jQuery + AJAX + PHP in order to update everything on front-end -->
 	<script type= "text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type= "text/javascript">
-    $(document).ready(function() {
+	<script type= "text/javascript">
+	$(document).ready(function() {
     	/**
     	 * Updates time on front-end.
     	 */
