@@ -128,12 +128,12 @@
      * @return   string $hash
      */
     function password_encrypt($password) {
-            $hash_format = "$2y$10$";
-            $salt_length = 22;
-            $salt = generate_salt($salt_length);
-            $format_and_salt = $hash_format . $salt;
-            $hash = crypt($password, $format_and_salt);
-            return $hash;
+        $hash_format = "$2y$10$";
+        $salt_length = 22;
+        $salt = generate_salt($salt_length);
+        $format_and_salt = $hash_format . $salt;
+        $hash = crypt($password, $format_and_salt);
+        return $hash;
     }    
     
 
@@ -444,10 +444,10 @@
     	$result = mysqli_query($link, $query);
 
     	if ($result) {
-        	echo "<div class=\"platforms center_platform\">";
-        	echo "<table>";
-        	echo "<th><b>Platform</b></th>";
-        	echo "<th class=\"year\"><b>Year</b></th>";
+            echo "<div class=\"platforms center_platform\">";
+            echo "<table>";
+            echo "<th><b>Platform</b></th>";
+            echo "<th class=\"year\"><b>Year</b></th>";
             while ($row = mysqli_fetch_array($result)) {
             	$pname = $row["pname"];
             	$pyear = $row["pyear"];
@@ -475,10 +475,10 @@
     	$result = mysqli_query($link, $query);
 
     	if ($result) {
-        	echo "<div class=\"platforms center_platform\">";
-        	echo "<table>";
-        	echo "<th><b>Platform</b></th>";
-        	echo "<th class=\"year\"><b>Year</b></th>";
+            echo "<div class=\"platforms center_platform\">";
+            echo "<table>";
+            echo "<th><b>Platform</b></th>";
+            echo "<th class=\"year\"><b>Year</b></th>";
             while ($row = mysqli_fetch_array($result)) {
             	$pname = $row["pname"];
             	$pyear = $row["pyear"];
@@ -612,7 +612,7 @@
         global $link;
     	$table  = "Platforms";
 
-	    $query  = "SELECT * FROM $table";
+        $query  = "SELECT * FROM $table";
         $result = mysqli_query($link, $query);
 
         if ($result) {
@@ -995,10 +995,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_pc() {
-		if (isset($_POST['pc'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['pc'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1007,10 +1007,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_ps() {
-		if (isset($_POST['ps'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['ps'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1019,10 +1019,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_ps2() {
-		if (isset($_POST['ps2'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['ps2'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1031,10 +1031,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_ps3() {
-		if (isset($_POST['ps3'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['ps3'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1043,10 +1043,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_ps4() {
-		if (isset($_POST['ps'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['ps'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1055,10 +1055,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_xbox() {
-		if (isset($_POST['xbox'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['xbox'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1067,10 +1067,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_x360() {
-		if (isset($_POST['x360'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['x360'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1079,10 +1079,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_x1() {
-		if (isset($_POST['x1'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['x1'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1091,10 +1091,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_wii() {
-		if (isset($_POST['wii'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['wii'])) {
+            echo "checked";
+        }
+    }
 	
 
     /**
@@ -1103,10 +1103,10 @@
      * Calls:    Called in addGame.php
      */
 	function check_wiiu() {
-		if (isset($_POST['wiiu'])) {
-			echo "checked";
-		}
-	}
+        if (isset($_POST['wiiu'])) {
+            echo "checked";
+        }
+    }
 
 
     /**
