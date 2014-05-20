@@ -10,7 +10,7 @@
      * @param    string $message
      * @param    string $user, NULL if not specified
      */
-	function email($to, $from, $subject, $message, $user = NULL) {
+    function email($to, $from, $subject, $message, $user = NULL) {
         $from = "From: $from";
         if ($user) {
             $message = "From username: $user\n\n" . $message;
