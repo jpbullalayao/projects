@@ -140,29 +140,27 @@ public class DemoActivity extends VigoBaseActivity implements OnClickListener {
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		
-		// Start here with data logging
-		case R.id.request_data_button:
-			// Go to RequestDataActivity class
-			launchActivity(RequestDataActivity.class);
-			break;
-		case R.id.stop_data_button:
-			// Take off labels 
-			removeLabels();
-			
-			// Stop requesting data
-			contentArray = new byte[] {0x03,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
-			BlueToothMsgSender.getInstant().sendMsg(RequestFactory.getInstant().getPhoneToDeviceCommandRequest(contentArray)); // Start byte 01
-			
-			break;
-		case R.id.export_data_button:
-			// Go to DatabaseActivity class
-			launchActivity(DatabaseActivity.class);
-		}
+			// Start here with data logging
+			case R.id.request_data_button:
+				// Go to RequestDataActivity class
+				launchActivity(RequestDataActivity.class);
+				break;
+			case R.id.stop_data_button:
+				// Take off labels 
+				removeLabels();
+				
+				// Stop requesting data
+				contentArray = new byte[] {0x03,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
+				BlueToothMsgSender.getInstant().sendMsg(RequestFactory.getInstant().getPhoneToDeviceCommandRequest(contentArray)); // Start byte 01
+				break;
+			case R.id.export_data_button:
+				// Go to DatabaseActivity class
+				launchActivity(DatabaseActivity.class);
+			}
 	}
 	
 	public static DemoActivity getInstance() {
-	    return instance;
+		return instance;
 	}
 	
 	@Override
