@@ -4,8 +4,8 @@ import java.util.Random;
 
 /* Class:   RandomDataGenerator
  * Author:  Jourdan Bul-lalayao
- * Purpose: Used to generate fake data for the data logging feature. This is so that we can test to ensure that data logging works, so that we can later implement it
- * 			with the real bluetooth data.
+ * Purpose: Used to generate fake data for the data logging feature. This is so that we can test to ensure that
+ *          data logging works, so that we can later implement it with the real bluetooth data.
  */
 
 public class RandomDataGenerator {
@@ -32,88 +32,92 @@ public class RandomDataGenerator {
 		rand = new Random();
 	}
 	
+	/* Function:     random()
+	 * Purpose:      Used to generate data for each of the necessary data fields that are in the Vigo database.
+	 * Date written: ???
+	 */
 	public void random() {
 		int min = 0;
 		int max = 0;
 		int randNum = 0;
 		
-		/* log_state */
+		// log_state
 		min = 1;
 		max = 3;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setState(randNum);
 		
-		/* log_prox_1 */
+		// log_prox_1
 		min = 1;
 		max = 10;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setProx1(randNum);
 		
-		/* log_prox_2 */
+		// log_prox_2
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setProx2(randNum);
 		
-		/* log_prox_3 */
+		// log_prox_3 
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setProx3(randNum);
 		
-		/* log_yaw */
+		// log_yaw
 		min = 1;
 		max = 180;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setYaw(randNum);
 		
-		/* log_pitch */
+		// log_pitch 
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setPitch(randNum);
 		
-		/* log_roll */
+		// log_roll 
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setRoll(randNum);
 		
-		/* log_totalblinks */
+		// log_totalblinks 
 		min = 1;
 		max = 500;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setTotalBlinks(randNum);
 		
-		/* log_avgbpm */
+		// log_avgbpm 
 		min = 1;
 		max = 60;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setAvgBpm(randNum);
 		
-		/* log_avgblinkduration */
+		// log_avgblinkduration 
 		min = 1;
 		max = 30;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setAvgBlinkDuration(randNum);
 		
-		/* log_recentblinkduration */
+		// log_recentblinkduration 
 		min = 1;
 		max = 30;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setRecentBlinkDuration(randNum);
 		
-		/* log_avg */
+		// log_avg 
 		min = 1;
 		max = 30;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setAvg(randNum);
 		
-		/* log_perclos */
+		// log_perclos
 		min = 1;
 		max = 100;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setPerClos(randNum);
 		
-		/* log_idletime */
+		// log_idletime
 		min = 1;
 		max = 1000;
 		randNum = rand.nextInt((max - min + 1)) + min;
 		setIdleTime(randNum);
 		
-		/* log_headtilt */
+		// log_headtilt 
 		min = 0;
 		max = 90;
 		randNum = rand.nextInt((max - min + 1)) + min;

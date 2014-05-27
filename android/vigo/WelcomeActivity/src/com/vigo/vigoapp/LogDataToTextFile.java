@@ -16,6 +16,7 @@ import android.os.Environment;
 public class LogDataToTextFile {
 
 	private byte[] bluetoothContentByteArray;
+	private int accelx;
 	private int state;
 	private int prox1;
 	private int prox2;
@@ -40,6 +41,10 @@ public class LogDataToTextFile {
 		writer = null;
 	}
 	
+	/* Function:     createFile
+	 * Purpose:      Creates a file with a timestamp filename.
+	 * Date written: ???
+	 */
 	public void createFile() {
 		Date date = new Date();
     	SimpleDateFormat sdf = new SimpleDateFormat("MM-dd-yyyy h-mm-ss a");
@@ -55,6 +60,10 @@ public class LogDataToTextFile {
 		}
 	}
 	
+	/* Function:     log
+	 * Purpose:      Log randomly generated data to a text file.
+	 * Date written: ???
+	 */
 	public void log(RandomDataGenerator randGen) {
 		
 		createFile();
@@ -62,7 +71,10 @@ public class LogDataToTextFile {
         // Try/catch statement necessary for FileWriter
         try {
             for (byte theByte : bluetoothContentByteArray) {
-            	if (theByte == 0x30) {
+            	if (theByte == 0x16) {
+            		writer.write("accel_x\n");
+            		writer.write(Integer.toString(accelx));
+            	} else if (theByte == 0x30) {
             		state = randGen.getState();
             		writer.write("log_state\n");
             		writer.write(Integer.toString(state));
