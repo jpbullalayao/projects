@@ -10,20 +10,20 @@ public class Node {
   /**
    * Holds basic integer type.
    */
-	public int data;
+  public int data;
 	
-	/**
-	 * Object reference to null or another Node object.
-	 */
-	public Node next;
+  /**
+   * Object reference to null or another Node object.
+   */
+  public Node next;
 
-	/**
-	 * Initializes a new node object.
-	 * 
-	 * @param data Integer that initializing node will hold
-	 */
-	public Node(int data) {
-		this.data = data;
-		next = null;
-	}
+  /**
+   * Initializes a new node object.
+   * 
+   * @param data Integer that initializing node will hold
+   */
+  public Node(int data) {
+    this.data = data;
+    next = null;
+  }
 }
