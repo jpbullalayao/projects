@@ -32,7 +32,7 @@ public class Stack {
   }
 
   /**
-   * Removes node from front (top) of the stack.
+   * Removes the node from front (top) of the stack.
    * 
    * @return Null or top Node
    */
@@ -46,6 +46,48 @@ public class Stack {
     }
   }
 
+  /**
+   * Returns data held by top node of the stack.
+   * 
+   * @return -1 or data on top of stack
+   */
+  public int peek() {
+    if (top == null) {
+      return -1;
+    } else {
+      return top.data;
+    }
+  }
+  
+  /**
+   * 
+   * @param  data Number to be searched in stack
+   * @return -1 or distance from top (top returns 1)
+   */
+  public int search(int data) {
+    int distance = 1;
+    Node node = top;
+    
+    while (node != null) {
+      if (node.data == data) {
+        return distance;
+      }
+      distance++;
+      node = node.next;
+    }
+    
+    return -1; // Could not find specified data
+  }
+  
+  /**
+   * Checks if stack is empty.
+   * 
+   * @return true if empty, false if not empty
+   */
+  public boolean isEmpty() {
+    return top == null;
+  }
+  
   @Override
   public String toString() {
     Node node = top;
