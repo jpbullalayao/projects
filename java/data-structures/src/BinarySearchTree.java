@@ -1,16 +1,41 @@
+/**
+ * Represents a manual implementation of the binary search tree data structure.
+ * 
+ * @author  Jourdan Bul-lalayao <jpbullalayao@gmail.com>
+ * @version 1.0
+ * @since   2015-03-12
+ */
 public class BinarySearchTree {
 
+  /**
+   * Object reference to root of binary search tree.
+   */
   private BSTNode root;
 
+  /**
+   * Initializes binary search tree with a null root.
+   */
   public BinarySearchTree() {
     root = null;
   }
 
+  /**
+   * Calls recursive function to insert a new node into the binary search tree.
+   * 
+   * @param data Integer that new node will hold
+   */
   public void insert(int data) {    
     root = insert(data, root);
   }
 
-  public BSTNode insert(int data, BSTNode node) {
+  /**
+   * Recursive function that inserts a new node into the binary search tree.
+   * 
+   * @param  data Integer that new node will hold
+   * @param  node Current node reference 
+   * @return Binary search tree with new node
+   */
+  private BSTNode insert(int data, BSTNode node) {
     if (node == null) {
       return new BSTNode(data);
     }
@@ -21,20 +46,25 @@ public class BinarySearchTree {
     }
     return node;
   }
-
-  public void delete(int data) {
-    root = delete(data, root);
-  }
   
-  public BSTNode delete(int data, BSTNode node) {
-    return null;
-  }
-  
+  /**
+   * Calls recursive function to check if a number exists in the binary search tree.
+   * 
+   * @param  data Integer to find in binary search tree
+   * @return true if integer was found, false if not
+   */
   public boolean find(int data) {
     return find(data, root);
   }
   
-  public boolean find(int data, BSTNode node) {
+  /**
+   * Recursive function that checks if a number exists in the binary search tree.
+   * 
+   * @param  data Integer to find in binary search tree
+   * @param  node Current node reference
+   * @return true if integer was found, false if not
+   */
+  private boolean find(int data, BSTNode node) {
     if (node == null) {
       return false;
     }
@@ -49,12 +79,22 @@ public class BinarySearchTree {
     }
   }
   
+  /**
+   * Calls recursive function that performs preorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
   public String preorderTraverse() {
     String result = "Preorder: ";
     return preorderTraverse(root, result);
   }
 
-  public String preorderTraverse(BSTNode node, String result) {
+  /**
+   * Recursive function that performs preorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
+  private String preorderTraverse(BSTNode node, String result) {
     if (node != null) {
       result += node.getData() + " ";
       result = preorderTraverse(node.getLeft(), result);
@@ -63,12 +103,22 @@ public class BinarySearchTree {
     return result;
   }
 
+  /**
+   * Calls recursive function that performs inorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
   public String inorderTraverse() {
     String result = "Inorder: ";
     return inorderTraverse(root, result);
   }
 
-  public String inorderTraverse(BSTNode node, String result) {
+  /**
+   * Recursive function that performs inorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
+  private String inorderTraverse(BSTNode node, String result) {
     if (node != null) {
       result = inorderTraverse(node.getLeft(), result);
       result += node.getData() + " ";
@@ -77,39 +127,27 @@ public class BinarySearchTree {
     return result;
   }
 
+  /**
+   * Calls recursive function that performs postorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
   public String postorderTraverse() {
     String result = "Postorder: ";
     return postorderTraverse(root, result);
   }
 
-  public String postorderTraverse(BSTNode node, String result) {
+  /**
+   * Recursive function that performs postorder traversal on the binary search tree.
+   * 
+   * @return String-formatted data of the binary search tree
+   */
+  private String postorderTraverse(BSTNode node, String result) {
     if (node != null) {
       result = postorderTraverse(node.getLeft(), result);
       result = postorderTraverse(node.getRight(), result);
       result += node.getData() + " ";
     }
     return result;
-  }
-  
-  public static void main(String[] args) {
-    BinarySearchTree b = new BinarySearchTree();
-    
-    b.insert(4);
-    b.insert(3);
-    b.insert(1);
-    b.insert(2);
-    b.insert(8);
-    b.insert(6);
-    b.insert(5);
-    b.insert(9);
-    
-    System.out.println(b.preorderTraverse());
-    System.out.println(b.inorderTraverse());
-    System.out.println(b.postorderTraverse());
-    System.out.println(b.find(4));
-    System.out.println(b.find(100));
-    System.out.println(b.find(2));
-    System.out.println(b.find(9));
-    System.out.println(b.find(5));
   }
 }
