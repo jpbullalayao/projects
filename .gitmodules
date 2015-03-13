@@ -1,0 +1,3 @@
+[submodule "web/websites/rails/mhnetwork"]
+	path = web/websites/rails/mhnetwork
+	url = git@git@github.com:jpbullalayao/mhnetwork.git
