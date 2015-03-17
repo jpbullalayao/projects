@@ -59,13 +59,4 @@ public class Sorts {
       array[swapIndex] = temp;
     }
   }
-  
-  public static void main(String[] args) {
-    int[] array = new int[] {5, 3, 1, 8, 9, 7, 6, 2, 0, 4};
-    
-    selectionSort(array);
-    for (int i : array) {
-      System.out.println(i);
-    }
-  }
 }
